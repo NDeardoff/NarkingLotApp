@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">NarcingLotApp</string>
+    <string name="narking_lot">Narking Lot</string>
+    <string name="sign_in">Sign In</string>
+    <string name="user_name">User Name</string>
+    <string name="password">Password</string>
+    <string name="guest">Guest</string>
+
+    <!-- STATES FOR DROPDOWN -->
+    <string-array name="state_list">
+        <item>Select One</item>
+        <item>AL</item> <item>AK</item> <item>AR</item> <item>AZ</item> <item>CA</item>
+        <item>CO</item> <item>CT</item> <item>DE</item> <item>FL</item> <item>GA</item>
+        <item>HI</item> <item>IA</item> <item>ID</item> <item>IL</item> <item>IN</item>
+        <item>KS</item> <item>KY</item> <item>LA</item> <item>MA</item><item>MD</item>
+        <item>ME</item> <item>MI</item> <item>MN</item> <item>MO</item> <item>MS</item>
+        <item>MT</item> <item>NC</item> <item>ND</item> <item>NE</item> <item>NJ</item>
+        <item>NH</item> <item>NM</item> <item>NV</item> <item>NY</item> <item>OH</item>
+        <item>OK</item> <item>OG</item> <item>PA</item> <item>RI</item> <item>SC</item>
+        <item>SD</item> <item>TN</item> <item>TX</item> <item>UT</item> <item>VT</item>
+        <item>VA</item> <item>WA</item> <item>WI</item> <item>WV</item> <item>WY</item>
+        </string-array>
+
+</resources>
+

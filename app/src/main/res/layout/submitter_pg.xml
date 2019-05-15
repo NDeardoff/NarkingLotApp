@@ -1,0 +1,333 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--GRADIENT-->
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                             xmlns:app="http://schemas.android.com/apk/res-auto"
+                                             xmlns:tools="http://schemas.android.com/tools"
+                                             android:layout_width="match_parent"
+                                             android:layout_height="match_parent"
+                                             android:background="@drawable/gradient">
+    <!--WHITE BOX-->
+    <View
+            android:layout_width="325dp"
+            android:layout_height="669dp"
+            android:background="#ffffff"
+            android:id="@+id/view" app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginLeft="8dp" android:layout_marginStart="8dp" android:layout_marginTop="8dp"
+            app:layout_constraintTop_toTopOf="parent" android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toBottomOf="parent" android:visibility="visible"/>
+    <CheckBox
+            android:text="I Agree"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/checkBox2"
+            android:layout_marginTop="16dp"
+            android:layout_marginLeft="8dp" android:layout_marginStart="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/button6" app:layout_constraintStart_toEndOf="@+id/fraudButton"/>
+    <Button
+            android:text="Fraud Agreement"
+            android:layout_width="189dp"
+            android:layout_height="49dp"
+            android:id="@+id/fraudButton"
+            app:layout_constraintEnd_toEndOf="@+id/view"
+            app:layout_constraintStart_toStartOf="@+id/view"
+            app:layout_constraintHorizontal_bias="0.196"
+            android:layout_marginTop="8dp" app:layout_constraintTop_toBottomOf="@+id/button5"/>
+
+    <!--PREVIOUS PAGE BUTTON-->
+    <Button
+            android:text="Prev Page"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/PreButton"
+            app:layout_constraintStart_toStartOf="@+id/view"
+            android:layout_marginLeft="20dp" android:layout_marginStart="20dp" android:layout_marginBottom="12dp"
+            app:layout_constraintBottom_toBottomOf="@+id/view" app:layout_constraintEnd_toStartOf="@+id/Submitbtn"
+            android:layout_marginEnd="8dp" android:layout_marginRight="8dp" app:layout_constraintHorizontal_bias="0.0"/>
+
+    <!--SUBMIT BUTTON-->
+    <Button
+            android:text="Submit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/Submitbtn"
+            app:layout_constraintEnd_toEndOf="@+id/view"
+            android:layout_marginEnd="20dp" android:layout_marginRight="20dp"
+            android:layout_marginBottom="14dp"
+            app:layout_constraintBottom_toBottomOf="@+id/view"/>
+
+    <!--OPEN CAMERA BUTTON-->
+    <Button
+            android:text="Open Camera"
+            android:layout_width="wrap_content"
+            android:layout_height="41dp"
+            android:id="@+id/button5"
+            app:layout_constraintStart_toStartOf="@+id/view"
+            android:layout_marginLeft="8dp" android:layout_marginStart="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/DLUL" android:layout_marginTop="2dp"
+            app:layout_constraintEnd_toStartOf="@+id/button6" android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp" android:visibility="invisible"/>
+
+    <!--SELECT PICTURE BOTTON-->
+    <Button
+            android:text="Pick Picture"
+            android:layout_width="wrap_content"
+            android:layout_height="41dp"
+            android:id="@+id/button6" app:layout_constraintEnd_toEndOf="@+id/view" android:layout_marginEnd="28dp"
+            android:layout_marginRight="28dp"
+            app:layout_constraintTop_toBottomOf="@+id/DLUL" android:layout_marginTop="2dp"
+            android:visibility="invisible"/>
+
+    <!--BANNER-->
+    <Button
+            android:text="Reset"
+            android:layout_width="79dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/resetButton"
+            android:layout_marginLeft="8dp" android:layout_marginStart="8dp" android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            app:layout_constraintHorizontal_bias="1.0"
+            android:layout_marginBottom="14dp" app:layout_constraintBottom_toBottomOf="@+id/view"
+            app:layout_constraintEnd_toStartOf="@+id/Submitbtn" app:layout_constraintStart_toEndOf="@+id/PreButton"/>
+    <TextView
+            android:layout_width="319dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:id="@+id/SubmitterBanner" android:typeface="normal"
+            android:textSize="40sp" android:textStyle="bold" android:textAllCaps="true"
+            android:textColor="@color/colorPrimary" android:layout_marginTop="36dp"
+            app:layout_constraintTop_toTopOf="@+id/view"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginEnd="8dp"
+            app:layout_constraintEnd_toEndOf="parent" android:layout_marginRight="8dp"
+            app:layout_constraintHorizontal_bias="0.496" android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"/>
+
+    <!-- Submitter Page Sub Banner -->
+    <TextView
+            android:text="SUBMITTER PAGE"
+            android:layout_width="229dp"
+            android:layout_height="30dp"
+            android:gravity="center"
+            android:id="@+id/SubmitterSubB" android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/SubmitterBanner" android:textSize="20sp" android:textStyle="bold"
+            android:textColor="@color/colorPrimary" android:layout_marginEnd="8dp"
+            app:layout_constraintEnd_toEndOf="parent" android:layout_marginRight="8dp" android:layout_marginStart="8dp"
+            app:layout_constraintStart_toStartOf="parent" android:layout_marginLeft="8dp"
+            app:layout_constraintHorizontal_bias="0.497"/>
+
+    <!--FIRST NAME LABEL-->
+    <TextView
+            android:text="First Name:"
+            android:layout_width="119dp"
+            android:layout_height="38dp"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textColor="@color/colorPrimary" android:textSize="18sp"
+            android:id="@+id/fname" android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/SubmitterSubB" app:layout_constraintStart_toStartOf="@+id/view"
+            android:layout_marginLeft="16dp" android:layout_marginStart="16dp"/>
+
+    <!--LAST NAME LABEL-->
+    <TextView
+            android:text="Last Name:"
+            android:layout_width="119dp"
+            android:layout_height="38dp"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textColor="@color/colorPrimary" android:textSize="18sp"
+            android:id="@+id/lname" android:layout_marginTop="4dp"
+            app:layout_constraintTop_toBottomOf="@+id/fname" android:layout_marginStart="16dp"
+            app:layout_constraintStart_toStartOf="@+id/view" android:layout_marginLeft="16dp"/>
+
+    <!--ADDRESS LABEL-->
+    <TextView
+            android:text="Address:"
+            android:layout_width="99dp"
+            android:layout_height="38dp"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textColor="@color/colorPrimary" android:textSize="18sp"
+            android:id="@+id/addresssub"
+            android:layout_marginStart="36dp"
+            app:layout_constraintStart_toStartOf="@+id/view" android:layout_marginLeft="36dp"
+            android:layout_marginTop="4dp" app:layout_constraintTop_toBottomOf="@+id/lname"/>
+
+    <!--CITY LABEL-->
+    <TextView
+            android:text="City:"
+            android:layout_width="99dp"
+            android:layout_height="38dp"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textColor="@color/colorPrimary" android:textSize="18sp"
+            android:id="@+id/citysub" android:layout_marginTop="4dp"
+            app:layout_constraintTop_toBottomOf="@+id/addresssub" app:layout_constraintStart_toStartOf="@+id/view"
+            android:layout_marginLeft="36dp" android:layout_marginStart="36dp"/>
+
+    <!--STATE LABEL-->
+    <TextView
+            android:text="State:"
+            android:layout_width="99dp"
+            android:layout_height="38dp"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textColor="@color/colorPrimary" android:textSize="18sp"
+            android:id="@+id/statesub" android:layout_marginTop="4dp"
+            app:layout_constraintTop_toBottomOf="@+id/citysub" app:layout_constraintStart_toStartOf="@+id/view"
+            android:layout_marginLeft="36dp" android:layout_marginStart="36dp"/>
+
+    <!--ZIP LABEL-->
+    <TextView
+            android:text="ZIP:"
+            android:layout_width="99dp"
+            android:layout_height="38dp"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textColor="@color/colorPrimary" android:textSize="18sp"
+            android:id="@+id/zipsub" android:layout_marginTop="4dp"
+            app:layout_constraintTop_toBottomOf="@+id/statesub" app:layout_constraintStart_toStartOf="@+id/view"
+            android:layout_marginLeft="36dp" android:layout_marginStart="36dp"/>
+
+    <!--DRIVERS LIC NUMBER LABEL-->
+    <TextView
+            android:text="D/L #:"
+            android:layout_width="99dp"
+            android:layout_height="38dp"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textColor="@color/colorPrimary" android:textSize="18sp"
+            android:id="@+id/dlnum" android:layout_marginTop="4dp"
+            app:layout_constraintTop_toBottomOf="@+id/zipsub" app:layout_constraintStart_toStartOf="@+id/view"
+            android:layout_marginLeft="36dp" android:layout_marginStart="36dp"/>
+
+    <!--DRIVERS LIC STATE LABEL-->
+    <TextView
+            android:text="D/L State:"
+            android:layout_width="99dp"
+            android:layout_height="38dp"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textColor="@color/colorPrimary" android:textSize="18sp"
+            android:id="@+id/dlstate" android:layout_marginTop="4dp"
+            app:layout_constraintTop_toBottomOf="@+id/dlnum" app:layout_constraintStart_toStartOf="@+id/view"
+            android:layout_marginLeft="36dp" android:layout_marginStart="36dp"/>
+
+    <!--SUBMITTER FIRST NAME-->
+    <EditText
+            android:layout_width="152dp"
+            android:layout_height="40dp"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:textSize="17sp"
+            android:id="@+id/subfn"
+            app:layout_constraintStart_toEndOf="@+id/fname" android:layout_marginLeft="8dp"
+            android:layout_marginStart="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/SubmitterSubB" android:layout_marginTop="8dp"/>
+
+    <!--SUBMITTER LAST NAME-->
+    <EditText
+            android:layout_width="152dp"
+            android:layout_height="40dp"
+            android:inputType="textPersonName"
+            android:text=""
+            android:ems="10"
+            android:textSize="17sp"
+            android:id="@+id/lnsub"
+            app:layout_constraintTop_toBottomOf="@+id/subfn" app:layout_constraintStart_toEndOf="@+id/fname"
+            android:layout_marginStart="8dp" android:layout_marginLeft="8dp"/>
+
+    <!--SUBMITTER ADDRESS-->
+    <EditText
+            android:layout_width="152dp"
+            android:layout_height="40dp"
+            android:inputType="textPersonName"
+            android:text=""
+            android:ems="10"
+            android:textSize="17sp"
+            android:id="@+id/addsub"
+            app:layout_constraintTop_toBottomOf="@+id/lnsub"
+            app:layout_constraintStart_toEndOf="@+id/fname" android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"/>
+
+    <!--SUBMITTER CITY-->
+    <EditText
+            android:layout_width="152dp"
+            android:layout_height="40dp"
+            android:inputType="textPersonName"
+            android:text=""
+            android:ems="10"
+            android:textSize="17sp"
+            android:id="@+id/citysubenter"
+            app:layout_constraintTop_toBottomOf="@+id/addsub"
+            android:layout_marginLeft="8dp" android:layout_marginStart="8dp"
+            app:layout_constraintStart_toEndOf="@+id/fname"/>
+
+    <!--SUBMITTER STATE  EVENTUALLY CHANGING TO DROPDOWN LIST-->
+
+    <!--SUMITTER ZIP EVENTUALLY AUTOFILL BASED ON LOCATION-->
+    <EditText
+            android:layout_width="152dp"
+            android:layout_height="40dp"
+            android:inputType="textPersonName"
+            android:text=""
+            android:ems="10"
+            android:textSize="17sp"
+            android:id="@+id/zipsubenter"
+            app:layout_constraintTop_toBottomOf="@+id/statesub" app:layout_constraintStart_toEndOf="@+id/fname"
+            android:layout_marginLeft="8dp" android:layout_marginStart="8dp"/>
+
+    <!--DRIVERS LIC NUMBER INPUT-->
+    <EditText
+            android:layout_width="152dp"
+            android:layout_height="40dp"
+            android:inputType="textPersonName"
+            android:text=""
+            android:ems="10"
+            android:textSize="17sp"
+            android:id="@+id/dlnumenter"
+            app:layout_constraintStart_toEndOf="@+id/fname" android:layout_marginLeft="8dp"
+            android:layout_marginStart="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/zipsub"/>
+
+    <!--DRIVERS LIC STATE INPUT-->
+
+    <!--LABEL  UPLOAD PICK OF DRIVERS LIC-->
+    <TextView
+            android:text="Please attach a picture of your license."
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/DLUL" android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/dlstate" app:layout_constraintStart_toStartOf="@+id/view"
+            app:layout_constraintEnd_toEndOf="@+id/view" app:layout_constraintHorizontal_bias="0.462"
+            android:visibility="invisible"/>
+    <!-- STATE DROPDOWN -->
+    <Spinner
+            android:layout_width="149dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/Subspinner" app:layout_constraintStart_toEndOf="@+id/statesub"
+            app:layout_constraintEnd_toEndOf="@+id/view" android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp" android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/citysubenter" android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toTopOf="@+id/zipsubenter" app:layout_constraintHorizontal_bias="0.281"
+            app:layout_constraintVertical_bias="0.0"
+            android:entries="@array/state_list"/>
+    <ImageView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" app:srcCompat="@drawable/nlbanner"
+            android:id="@+id/imageView3" app:layout_constraintStart_toStartOf="@+id/view"
+            android:layout_marginTop="8dp"
+            app:layout_constraintTop_toTopOf="@+id/view" app:layout_constraintEnd_toEndOf="@+id/view"/>
+    <Spinner
+            android:layout_width="143dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/Subspinner2" android:layout_marginTop="12dp"
+            app:layout_constraintTop_toBottomOf="@+id/dlnumenter" app:layout_constraintStart_toEndOf="@+id/dlstate"
+            app:layout_constraintEnd_toEndOf="@+id/view" android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp" app:layout_constraintHorizontal_bias="0.236"
+            android:entries="@array/state_list"/>
+
+    <!-- Adds a button to reset the page -->
+
+
+</android.support.constraint.ConstraintLayout>

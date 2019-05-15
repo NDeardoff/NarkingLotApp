@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                             xmlns:app="http://schemas.android.com/apk/res-auto"
+                                             xmlns:tools="http://schemas.android.com/tools"
+                                             android:layout_width="match_parent"
+                                             android:layout_height="match_parent"
+                                             android:background="@drawable/gradient"><!-- Adds the background gradient -->
+
+    <!-- Adds a white background so it is easier to see the text -->
+    <View
+            android:layout_width="325dp"
+            android:layout_height="669dp"
+            android:background="#ffffff"
+            android:id="@+id/view" app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginLeft="8dp" android:layout_marginStart="8dp" android:layout_marginTop="8dp"
+            app:layout_constraintTop_toTopOf="parent" android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toBottomOf="parent" android:visibility="visible"/>
+
+    <!-- Narcing Lot Banner -->
+    <TextView
+            android:layout_width="326dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:id="@+id/OffenderBanner" android:typeface="normal"
+            android:textSize="40sp" android:textStyle="bold" android:textAllCaps="true"
+            android:textColor="@color/colorPrimary" android:layout_marginTop="36dp"
+            app:layout_constraintTop_toTopOf="@+id/view"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginEnd="8dp"
+            app:layout_constraintEnd_toEndOf="parent" android:layout_marginRight="8dp"
+            app:layout_constraintHorizontal_bias="0.496" android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"/>
+
+    <!-- Offender Page Sub Banner -->
+    <TextView
+            android:text="OFFENDER PAGE"
+            android:layout_width="154dp"
+            android:layout_height="30dp"
+            android:gravity="center"
+            android:id="@+id/OffenderSubB" android:layout_marginTop="6dp"
+            app:layout_constraintTop_toBottomOf="@+id/OffenderBanner" android:textSize="20sp" android:textStyle="bold"
+            android:textColor="@color/colorPrimary" android:layout_marginEnd="8dp"
+            app:layout_constraintEnd_toEndOf="parent" android:layout_marginRight="8dp" android:layout_marginStart="8dp"
+            app:layout_constraintStart_toStartOf="parent" android:layout_marginLeft="8dp"
+            app:layout_constraintHorizontal_bias="0.497"/>
+
+    <!-- Car Model Text Enter -->
+    <EditText
+            android:layout_width="152dp"
+            android:layout_height="40dp"
+            android:inputType="textUri|textPersonName"
+            android:ems="10"
+            android:textSize="17sp"
+            android:id="@+id/ModelEnter"
+            app:layout_constraintStart_toEndOf="@+id/MakeLabel" android:layout_marginLeft="8dp"
+            android:layout_marginStart="8dp" app:layout_constraintEnd_toEndOf="@+id/view" android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp" app:layout_constraintHorizontal_bias="0.076"
+            app:layout_constraintTop_toBottomOf="@+id/MakeEnter"/>
+
+    <!-- Car Color Text enter -->
+    <EditText
+            android:layout_width="152dp"
+            android:layout_height="40dp"
+            android:inputType="textUri|textPersonName"
+            android:ems="10"
+            android:textSize="17sp"
+            android:id="@+id/ColorEnter"
+            app:layout_constraintStart_toEndOf="@+id/MakeLabel" android:layout_marginLeft="8dp"
+            android:layout_marginStart="8dp" app:layout_constraintEnd_toEndOf="@+id/view" android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp" app:layout_constraintHorizontal_bias="0.076"
+            app:layout_constraintTop_toBottomOf="@+id/ModelEnter"/>
+
+    <!-- Car plate # enter -->
+    <EditText
+            android:layout_width="152dp"
+            android:layout_height="40dp"
+            android:inputType="textUri|textPersonName"
+            android:ems="10"
+            android:textSize="17sp"
+            android:id="@+id/PlateEnter"
+            app:layout_constraintStart_toEndOf="@+id/MakeLabel" android:layout_marginLeft="8dp"
+            android:layout_marginStart="8dp" app:layout_constraintEnd_toEndOf="@+id/view" android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp" app:layout_constraintHorizontal_bias="0.076"
+            app:layout_constraintTop_toBottomOf="@+id/ColorEnter"/>
+
+    <!-- State the car is registered in enter -->
+
+    <!-- car vin # enter -->
+
+    <!-- car make enter -->
+    <EditText
+            android:layout_width="152dp"
+            android:layout_height="40dp"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:textSize="17sp"
+            android:id="@+id/MakeEnter"
+            app:layout_constraintStart_toEndOf="@+id/MakeLabel" android:layout_marginLeft="8dp"
+            android:layout_marginStart="8dp" app:layout_constraintEnd_toEndOf="@+id/view" android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp" app:layout_constraintHorizontal_bias="0.076"
+            android:layout_marginTop="40dp"
+            app:layout_constraintTop_toBottomOf="@+id/OffenderSubB"/>
+
+    <!-- Make label -->
+    <TextView
+            android:text="Make:"
+            android:layout_width="99dp"
+            android:layout_height="38dp"
+            android:gravity="center"
+            android:id="@+id/MakeLabel" app:layout_constraintStart_toStartOf="@+id/view"
+            android:layout_marginLeft="36dp"
+            android:layout_marginStart="36dp" android:layout_marginTop="40dp"
+            app:layout_constraintTop_toBottomOf="@+id/OffenderSubB" android:textStyle="bold"
+            android:textColor="@color/colorPrimary" android:textSize="18sp"/>
+
+    <!-- Model label -->
+    <TextView
+            android:text="Model:"
+            android:layout_width="99dp"
+            android:layout_height="38dp"
+            android:gravity="center"
+            android:id="@+id/ModelLabel" app:layout_constraintStart_toStartOf="@+id/view"
+            android:layout_marginLeft="36dp"
+            android:layout_marginStart="36dp"
+            app:layout_constraintTop_toBottomOf="@+id/MakeLabel" android:textStyle="bold"
+            android:textColor="@color/colorPrimary" android:textSize="18sp" android:layout_marginEnd="8dp"
+            app:layout_constraintEnd_toStartOf="@+id/ModelEnter" android:layout_marginRight="8dp"
+            app:layout_constraintHorizontal_bias="1.0" android:layout_marginTop="2dp"/>
+
+    <!-- Color label -->
+    <TextView
+            android:text="Color:"
+            android:layout_width="99dp"
+            android:layout_height="38dp"
+            android:gravity="center"
+            android:id="@+id/ColorLabel" app:layout_constraintStart_toStartOf="@+id/view"
+            android:layout_marginLeft="36dp"
+            android:layout_marginStart="36dp"
+            app:layout_constraintTop_toBottomOf="@+id/ModelLabel" android:textStyle="bold"
+            android:textColor="@color/colorPrimary" android:textSize="18sp" android:layout_marginEnd="8dp"
+            app:layout_constraintEnd_toStartOf="@+id/ModelEnter" android:layout_marginRight="8dp"
+            app:layout_constraintHorizontal_bias="1.0" android:layout_marginTop="2dp"/>
+
+    <!-- Plate # label -->
+    <TextView
+            android:text="Plate #: "
+            android:layout_width="99dp"
+            android:layout_height="38dp"
+            android:gravity="center"
+            android:id="@+id/PlateLabel" app:layout_constraintStart_toStartOf="@+id/view"
+            android:layout_marginLeft="36dp"
+            android:layout_marginStart="36dp"
+            app:layout_constraintTop_toBottomOf="@+id/ColorLabel" android:textStyle="bold"
+            android:textColor="@color/colorPrimary" android:textSize="18sp" android:layout_marginEnd="8dp"
+            app:layout_constraintEnd_toStartOf="@+id/ModelEnter" android:layout_marginRight="8dp"
+            app:layout_constraintHorizontal_bias="1.0" android:layout_marginTop="2dp"/>
+
+    <!-- Registered state label -->
+    <TextView
+            android:text="Reg State:"
+            android:layout_width="99dp"
+            android:layout_height="38dp"
+            android:gravity="center"
+            android:id="@+id/RegStateLabel" app:layout_constraintStart_toStartOf="@+id/view"
+            android:layout_marginLeft="36dp"
+            android:layout_marginStart="36dp"
+            app:layout_constraintTop_toBottomOf="@+id/PlateLabel" android:textStyle="bold"
+            android:textColor="@color/colorPrimary" android:textSize="18sp" android:layout_marginEnd="8dp"
+            app:layout_constraintEnd_toStartOf="@+id/ModelEnter" android:layout_marginRight="8dp"
+            app:layout_constraintHorizontal_bias="1.0"/>
+
+    <!-- vin # label -->
+
+    <!-- Pick pic label -->
+    <TextView
+            android:text="Submit a picture of the Infraction"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView11" android:textSize="14sp"
+            android:textColor="@color/colorPrimary"
+            app:layout_constraintEnd_toEndOf="@+id/view" app:layout_constraintStart_toStartOf="@+id/view"
+            android:layout_marginTop="60dp" app:layout_constraintTop_toBottomOf="@+id/RegStateLabel"
+            android:visibility="invisible"/>
+
+    <!-- Button to open the Camera -->
+    <Button
+            android:text="Open Camera"
+            android:layout_width="wrap_content"
+            android:layout_height="41dp"
+            android:id="@+id/button" app:layout_constraintEnd_toStartOf="@+id/button2" android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp" app:layout_constraintStart_toStartOf="@+id/view"
+            android:layout_marginLeft="8dp" android:layout_marginStart="8dp"
+            app:layout_constraintHorizontal_bias="1.0" android:layout_marginTop="12dp"
+            app:layout_constraintTop_toBottomOf="@+id/textView11" android:visibility="invisible"/>
+
+    <!-- Button to select a picture -->
+    <Button
+            android:text="Pick Picture"
+            android:layout_width="wrap_content"
+            android:layout_height="41dp"
+            android:id="@+id/button2" app:layout_constraintEnd_toEndOf="@+id/view" android:layout_marginEnd="44dp"
+            android:layout_marginRight="44dp" android:layout_marginTop="12dp"
+            app:layout_constraintTop_toBottomOf="@+id/textView11" android:visibility="invisible"/>
+
+    <!-- Button to open the next page -->
+    <Button
+            android:text="Next Page"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/NextPgbtn" android:layout_marginTop="28dp"
+            app:layout_constraintTop_toBottomOf="@+id/button2"
+            app:layout_constraintEnd_toEndOf="@+id/view" android:layout_marginEnd="48dp"
+            android:layout_marginRight="48dp"/>
+
+    <!-- STATE DROPDOWN -->
+    <Spinner
+            android:layout_width="150dp"
+            android:layout_height="22dp"
+            android:id="@+id/Offspinner" app:layout_constraintEnd_toEndOf="@+id/view" android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp" app:layout_constraintStart_toEndOf="@+id/RegStateLabel"
+            android:layout_marginLeft="8dp" android:layout_marginStart="8dp"
+            app:layout_constraintHorizontal_bias="0.0"
+            android:layout_marginTop="6dp"
+            app:layout_constraintTop_toBottomOf="@+id/PlateEnter"
+            android:entries="@array/state_list"/>
+
+    <!-- Adds a button to reset the page -->
+    <Button
+            android:text="Reset"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/resetButton"
+            android:layout_marginTop="28dp"
+            app:layout_constraintTop_toBottomOf="@+id/button" app:layout_constraintEnd_toStartOf="@+id/NextPgbtn"
+            android:layout_marginEnd="8dp" android:layout_marginRight="8dp"
+            app:layout_constraintStart_toStartOf="@+id/view" android:layout_marginLeft="8dp"
+            android:layout_marginStart="8dp"/>
+    <ImageView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" app:srcCompat="@drawable/nlbanner"
+            android:id="@+id/imageView" app:layout_constraintStart_toStartOf="@+id/view"
+            app:layout_constraintEnd_toEndOf="@+id/view" android:layout_marginTop="8dp"
+            app:layout_constraintTop_toTopOf="@+id/view" app:layout_constraintHorizontal_bias="1.0"/>
+</android.support.constraint.ConstraintLayout>
